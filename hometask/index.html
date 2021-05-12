@@ -1,178 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/4a00784589.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/4a00784589.js"
+      crossorigin="anonymous"
+    ></script>
     <title>PIZZERIA</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav navbar-left">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Payment</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Contacts</a>
-                  </li>
-                </ul>
-                <a class="navbar-brand mx-auto navbar-center" href="#"><img src="./assets/images/logos 1.png" alt=""></a>
-                <ul class="navbar-nav navbar-right d-flex align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><span></span> Daily 11am - 9pm</a>
-                      </li>
-                      <li class="nav-item phone">
-                        <i class="fas fa-phone-alt"></i>
-                        <a class="nav-link active" aria-current="page" href="#"><img src="" alt=""> 0 800 33 08 98</a>
-                      </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-left">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Payment</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+            <a class="navbar-brand mx-auto navbar-center" href="#"
+              ><img src="./assets/images/logos 1.png" alt=""
+            /></a>
+            <ul class="navbar-nav navbar-right d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><span></span> Daily 11am - 9pm</a
+                >
+              </li>
+              <li class="nav-item phone">
+                <i class="fas fa-phone-alt"></i>
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><img src="" alt="" /> 0 800 33 08 98</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
       <!-- Hero section start -->
-        <section id="hero" style="background-image: url(./assets/images/1.png);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="content text-center">
-                            <h1>Food delivery in Kovel</h1>
-                            <p>If you decide to relax or have unexpected guests, call us. We make sure that your vacation is comfortable, enjoyable and delicious</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Hero section end -->
-        
-        <!-- Dishes section start -->
-        <section id="dishes">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="head text-center">
-                  <div id="basket">
-                    <span class="badge">48$</span>
-                    <span class="badge-triangle"></span>
-                    <div class="shop">
-                      <i class="fas fa-shopping-bag"></i>
-                      <span class="badge-count">0</span>
-                    </div>
-                  </div>
-                  <h2>Popular dishes</h2>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div class="col-lg-3">
-                <div class="card">
-                    <img src="./assets/images/pizza1.png" alt="">
-                    <h4 class="pizza-name">Quattro formaggi</h4>
-                    <p class="ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                    <span class="card-cost">119 MAH</span>
-                    <div class="show-features mx-auto">
-                      <i class="fas fa-shopping-bag"></i>
-                    </div>
-                    <div class="sizes-overlay">
-                      <h3>Sizes:</h3>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          small - 20cm
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          medium - 20cm
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          big - 20cm
-                        </label>
-                      </div>
-                      <button class="btn btn-primary add-basket-btn">Add to basket</button>
-                    </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="card">
-                  <img src="./assets/images/pizza2.png" alt="">
-                  <h4 class="pizza-name">Quattro formaggi</h4>
-                  <p class="ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                  <span class="card-cost">119 MAH</span>
-                  <div class="show-features mx-auto">
-                    <i class="fas fa-shopping-bag"></i>
-                  </div>
-              </div>
-                </div>
-              <div class="col-lg-3">
-                <div class="card">
-                  <img src="./assets/images/pizza3.png" alt="">
-                  <h4 class="pizza-name">Quattro formaggi</h4>
-                  <p class="ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                  <span class="card-cost">119 MAH</span>
-                  <div class="show-features mx-auto">
-                    <i class="fas fa-shopping-bag"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="card">
-                  <img src="./assets/images/pizza4.png" alt="">
-                  <h4 class="pizza-name">Quattro formaggi</h4>
-                  <p class="ingredients">Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                  <span class="card-cost">119 MAH</span>
-                  <div class="show-features mx-auto">
-                    <i class="fas fa-shopping-bag"></i>
-                  </div>
-                </div>
+      <section id="hero" style="background-image: url(./assets/images/1.png)">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="content text-center">
+                <h1>Food delivery in Kovel</h1>
+                <p>
+                  If you decide to relax or have unexpected guests, call us. We
+                  make sure that your vacation is comfortable, enjoyable and
+                  delicious
+                </p>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Dishes section end -->
+        </div>
+      </section>
+      <!-- Hero section end -->
 
-        <!-- Fill Form section start -->
-        <section id="fill-form" style="background-image: url(./assets/images/car.png);">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="head text-center">
-                  <h2>Fill out the form
-                    and we will call you</h2>
+      <!-- Dishes section start -->
+      <section id="dishes">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="head text-center">
+                <div id="basket">
+                  <span class="badge">48$</span>
+                  <span class="badge-triangle"></span>
+                  <div class="shop">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="badge-count">0</span>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-12 text-center content">
-                <form action="">
-                  <input type="text" placeholder="Your name">
-                  <input type="text" placeholder="Phone number">
-                  <button type="submit">Call back --></button>
-                </form>
+                <h2>Popular dishes</h2>
               </div>
             </div>
           </div>
-        </section>
-        <!-- Fill Form section end -->
-      </main>
-</body>
+          <div class="row mt-5">
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="./assets/images/pizza1.png" alt="" />
+                <h4 class="pizza-name">Quattro formaggi</h4>
+                <p class="ingredients">
+                  Dough, Mozzarella, Cheddar, Blue, Parmesan
+                </p>
+                <span class="card-cost">119 MAH</span>
+                <div class="show-features mx-auto">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="sizes-overlay">
+                  <h3>Sizes:</h3>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      small - 20cm
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      medium - 20cm
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      big - 20cm
+                    </label>
+                  </div>
+                  <button class="btn btn-primary add-basket-btn">
+                    Add to basket
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="./assets/images/pizza2.png" alt="" />
+                <h4 class="pizza-name">Quattro formaggi</h4>
+                <p class="ingredients">
+                  Dough, Mozzarella, Cheddar, Blue, Parmesan
+                </p>
+                <span class="card-cost">119 MAH</span>
+                <div class="show-features mx-auto">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="./assets/images/pizza3.png" alt="" />
+                <h4 class="pizza-name">Quattro formaggi</h4>
+                <p class="ingredients">
+                  Dough, Mozzarella, Cheddar, Blue, Parmesan
+                </p>
+                <span class="card-cost">119 MAH</span>
+                <div class="show-features mx-auto">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="./assets/images/pizza4.png" alt="" />
+                <h4 class="pizza-name">Quattro formaggi</h4>
+                <p class="ingredients">
+                  Dough, Mozzarella, Cheddar, Blue, Parmesan
+                </p>
+                <span class="card-cost">119 MAH</span>
+                <div class="show-features mx-auto">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Dishes section end -->
+
+      <!-- Fill Form section start -->
+      <section
+        id="fill-form"
+        style="background-image: url(./assets/images/car.png)"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="head text-center">
+                <h2>Fill out the form and we will call you</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 text-center content">
+              <form action="">
+                <input type="text" placeholder="Your name" />
+                <input type="text" placeholder="Phone number" />
+                <button type="submit">Call back --></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fill Form section end -->
+    </main>
+
+    <footer id="footer">
+      <div class="content">
+        <ul class="d-flex justify-content-between">
+          <li><p>© Classic Family Restaurant</p></li>
+          <li class="footer-img"><img src="./assets/images/logos 1.png" alt="" /></li>
+          <li><p>Made with delight by harmuder</p></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>

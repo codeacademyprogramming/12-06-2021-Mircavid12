@@ -240,3 +240,31 @@
   border-radius: 30px;
   font-weight: bold;
 }
+
+#footer {
+  padding: 10px 0;
+}
+
+#footer .content {
+  display: flex;
+  align-items: center;
+}
+
+#footer .content ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+}
+
+#footer .content ul li {
+  display: flex;
+  align-items: center;
+}
+
+#footer .content ul li:first-child {
+  padding-top: 28px;
+}
+
+#footer .content ul li:last-child {
+  padding-top: 28px;
+}
