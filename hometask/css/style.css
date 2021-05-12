@@ -22,10 +22,11 @@
 }
 
 #hero h1 {
-  margin-top: 32vh;
-  font-family: sans-serif;
   font-weight: 700;
   font-size: 48px;
+  line-height: 58.51px;
+  font-family: sans-serif;
+  margin-top: 32vh;
 }
 
 #hero p {
@@ -33,4 +34,114 @@
   font-weight: normal;
   font-size: 18px;
   margin-top: 20px;
+}
+
+#dishes {
+  position: relative;
+  padding: 120px 0;
+}
+
+#dishes .head h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.51px;
+  font-family: sans-serif;
+}
+
+#dishes .card {
+  border: 2px solid #ECEEF7;
+}
+
+#dishes .card img {
+  max-width: 100%;
+}
+
+#dishes .card .pizza-name {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 15px 0px 15px;
+}
+
+#dishes .card .ingredients {
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+#dishes .card .card-cost {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 0;
+  font-size: 20px;
+}
+
+#dishes .card .show-features {
+  height: 50px;
+  width: 50px;
+  margin-bottom: -25px;
+  transform: rotate(45deg);
+  border-right: 2px solid #ECEEF7;
+  border-bottom: 2px solid #ECEEF7;
+  border-radius: 12px;
+  background: #fff;
+}
+
+#dishes .card .show-features i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  color: #F58656;
+}
+
+#basket {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 3vw;
+  top: 10vh;
+}
+
+#basket .badge {
+  background-color: #3f3f3f;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+#basket .badge-triangle {
+  margin-right: 3px;
+}
+
+#basket .shop {
+  cursor: pointer;
+}
+
+#basket .shop i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F58656;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 22px 2px rgba(0, 0, 0, 0.47);
+}
+
+#basket .shop .badge-count {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+  color: #fff;
+  background-color: #F58656;
 }

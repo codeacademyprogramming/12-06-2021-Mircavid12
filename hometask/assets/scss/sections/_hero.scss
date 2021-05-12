@@ -4,10 +4,8 @@
     background-position: top;
     background-repeat: no-repeat;
     h1{
+        @include headers;
         margin-top: 32vh;
-        font-family: sans-serif;
-        font-weight: $main-font-weight;
-        font-size: $main-font-size;
     }
     p{
         padding: 0 25%;
