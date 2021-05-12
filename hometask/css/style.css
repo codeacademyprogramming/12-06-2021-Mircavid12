@@ -1,0 +1,36 @@
+#header {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#header .navbar-left {
+  margin-left: 8%;
+}
+
+#header .navbar-right {
+  margin-right: 8%;
+}
+
+#hero {
+  height: 130vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+#hero h1 {
+  margin-top: 32vh;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+#hero p {
+  padding: 0 25%;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 20px;
+}
