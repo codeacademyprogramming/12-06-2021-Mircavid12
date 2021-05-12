@@ -1,0 +1,33 @@
+#fill-form{
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    .head{
+        h2{
+            @include headers;
+            padding: 5% 30%;
+            color: #000;
+        }
+    }
+    .content{
+        input{
+            border: none;
+            border-radius: 30px;
+            padding: 14px 20px;
+            margin-right: 50px;
+            width: 18vw;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            background: #FE5626;
+            border: none;
+            padding: 14px 50px;
+            color: #fff;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+    }
+}

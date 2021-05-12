@@ -10,12 +10,37 @@
   margin-left: 8%;
 }
 
+#header .navbar-left li {
+  padding-left: 5px;
+}
+
 #header .navbar-right {
-  margin-right: 8%;
+  margin-right: 4%;
+}
+
+#header .navbar-right .phone {
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#header .navbar-right .phone i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+#header .navbar-right .phone a {
+  font-weight: 700;
 }
 
 #hero {
-  height: 130vh;
+  height: 140vh;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -49,7 +74,7 @@
 }
 
 #dishes .card {
-  border: 2px solid #ECEEF7;
+  border: 2px solid #eceef7;
 }
 
 #dishes .card img {
@@ -79,8 +104,8 @@
   width: 50px;
   margin-bottom: -25px;
   transform: rotate(45deg);
-  border-right: 2px solid #ECEEF7;
-  border-bottom: 2px solid #ECEEF7;
+  border-right: 2px solid #eceef7;
+  border-bottom: 2px solid #eceef7;
   border-radius: 12px;
   background: #fff;
 }
@@ -93,6 +118,39 @@
   width: 50px;
   transform: rotate(-45deg);
   color: #F58656;
+}
+
+#dishes .card .sizes-overlay {
+  background: rgba(255, 255, 255, 0.911);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 25px;
+}
+
+#dishes .card .sizes-overlay h3 {
+  font-size: 24px;
+  padding: 40px 10px 10px 0;
+}
+
+#dishes .card .sizes-overlay .add-basket-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  padding: 10px 50px;
+  background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1;
+  border: none;
+}
+
+#dishes .card .sizes-overlay .add-basket-btn:focus {
+  border: none;
+  visibility: hidden;
 }
 
 #basket {
@@ -144,4 +202,41 @@
   bottom: -5px;
   color: #fff;
   background-color: #F58656;
+}
+
+#fill-form {
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#fill-form .head h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.51px;
+  font-family: sans-serif;
+  padding: 5% 30%;
+  color: #000;
+}
+
+#fill-form .content input {
+  border: none;
+  border-radius: 30px;
+  padding: 14px 20px;
+  margin-right: 50px;
+  width: 18vw;
+}
+
+#fill-form .content input:focus {
+  outline: none;
+}
+
+#fill-form .content button {
+  background: #FE5626;
+  border: none;
+  padding: 14px 50px;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
 }

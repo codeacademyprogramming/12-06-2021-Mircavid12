@@ -7,33 +7,33 @@
     }
   }
   .card {
-    border: 2px solid #ECEEF7;
+    border: 2px solid #eceef7;
 
     img {
       max-width: 100%;
     }
     .pizza-name {
-        font-size: 18px;
-        font-weight: 700;
-        padding: 20px 15px 0px 15px;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 20px 15px 0px 15px;
     }
-    .ingredients{
-        padding: 0 15px;
-        font-size: 14px;
+    .ingredients {
+      padding: 0 15px;
+      font-size: 14px;
     }
-    .card-cost{
-        margin-left: auto;
-        margin-right: auto;
-        padding: 5px 0;
-        font-size: 20px;
+    .card-cost {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px 0;
+      font-size: 20px;
     }
     .show-features {
       height: 50px;
       width: 50px;
       margin-bottom: -25px;
       transform: rotate(45deg);
-      border-right: 2px solid #ECEEF7;
-      border-bottom: 2px solid #ECEEF7;
+      border-right: 2px solid #eceef7;
+      border-bottom: 2px solid #eceef7;
       border-radius: 12px;
       background: #fff;
       i {
@@ -44,6 +44,35 @@
         width: 50px;
         transform: rotate(-45deg);
         color: $primary-color;
+      }
+    }
+    .sizes-overlay {
+      background: rgba(255, 255, 255, 0.911);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0 25px;
+      h3 {
+        font-size: 24px;
+        padding: 40px 10px 10px 0;
+      }
+      .add-basket-btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        padding: 10px 50px;
+        background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1;
+        border: none;
+        &:focus{
+            border: none;
+            visibility: hidden;
+        }
       }
     }
   }
