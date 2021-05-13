@@ -8,14 +8,15 @@
   }
   .card {
     border: 2px solid #eceef7;
-
+    height: 410px;
+    margin-top: 50px;
     img {
       max-width: 100%;
     }
     .pizza-name {
       font-size: 18px;
       font-weight: 700;
-      padding: 20px 15px 0px 15px;
+      padding: 0px 15px 0px 15px;
     }
     .ingredients {
       padding: 0 15px;
@@ -36,7 +37,12 @@
       border-bottom: 2px solid #eceef7;
       border-radius: 12px;
       background: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 41%;
+      z-index: 55;
       i {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,6 +51,12 @@
         transform: rotate(-45deg);
         color: $primary-color;
       }
+    }
+    .hidden{
+      visibility: hidden;
+    }
+    .show{
+      visibility: visible;
     }
     .sizes-overlay {
       background: rgba(255, 255, 255, 0.911);
@@ -119,6 +131,37 @@
       bottom: -5px;
       color: #fff;
       background-color: $primary-color;
+    }
+  }
+  .content{
+    position: absolute;
+    top: 20vh;
+    width: 30vw;
+    left: -20vw;
+    padding: 20px;
+    border: 2px solid #eceef7 ;
+    .item{
+      z-index: 5;
+      border-bottom: 2px solid #eceef7;
+      img{
+        max-width: 50px;
+      }
+      .item-count{
+        font-weight: 700;
+      }
+      .item-name{
+        padding-left: 20px;
+        span{
+          text-transform: lowercase;
+          font-weight: 700;
+        }
+      }
+      .item-cost{
+        margin-left: auto;
+      }
+      display: flex;
+      align-items: center;
+      font-weight: 700;
     }
   }
 }
