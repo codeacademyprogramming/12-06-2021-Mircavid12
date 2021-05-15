@@ -1,0 +1,16 @@
+#hero{
+    height: 140vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    h1{
+        @include headers;
+        margin-top: 32vh;
+    }
+    p{
+        padding: 0 25%;
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}

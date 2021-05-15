@@ -1,0 +1,167 @@
+#dishes {
+  position: relative;
+  padding: 120px 0;
+  .head {
+    h2 {
+      @include headers;
+    }
+  }
+  .card {
+    border: 2px solid #eceef7;
+    height: 410px;
+    margin-top: 50px;
+    img {
+      max-width: 100%;
+    }
+    .pizza-name {
+      font-size: 18px;
+      font-weight: 700;
+      padding: 0px 15px 0px 15px;
+    }
+    .ingredients {
+      padding: 0 15px;
+      font-size: 14px;
+    }
+    .card-cost {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px 0;
+      font-size: 20px;
+    }
+    .show-features {
+      height: 50px;
+      width: 50px;
+      margin-bottom: -25px;
+      transform: rotate(45deg);
+      border-right: 2px solid #eceef7;
+      border-bottom: 2px solid #eceef7;
+      border-radius: 12px;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 41%;
+      z-index: 55;
+      i {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        transform: rotate(-45deg);
+        color: $primary-color;
+      }
+    }
+    .hidden{
+      visibility: hidden;
+    }
+    .show{
+      visibility: visible;
+    }
+    .sizes-overlay {
+      background: rgba(255, 255, 255, 0.911);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 0 25px;
+      h3 {
+        font-size: 24px;
+        padding: 40px 10px 10px 0;
+      }
+      .add-basket-btn {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        padding: 10px 50px;
+        background: linear-gradient(116.88deg, #FE3326 -4.28%, #F26E0E 112.69%), #59AAF1;
+        border: none;
+        &:focus{
+            border: none;
+            visibility: hidden;
+        }
+      }
+    }
+  }
+}
+#basket {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 3vw;
+  top: 10vh;
+  .badge {
+    background-color: #3f3f3f;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  .badge-triangle {
+    margin-right: 3px;
+  }
+  .shop {
+    cursor: pointer;
+    i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $primary-color;
+      font-size: 30px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 22px 2px rgba(0, 0, 0, 0.47);
+    }
+    .badge-count {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: -5px;
+      bottom: -5px;
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+  .content{
+    position: absolute;
+    top: 20vh;
+    width: 30vw;
+    left: -20vw;
+    padding: 20px;
+    border: 2px solid #eceef7 ;
+    .item{
+      z-index: 5;
+      border-bottom: 2px solid #eceef7;
+      img{
+        max-width: 50px;
+      }
+      .item-count{
+        font-weight: 700;
+      }
+      .item-name{
+        padding-left: 20px;
+        span{
+          text-transform: lowercase;
+          font-weight: 700;
+        }
+      }
+      .item-cost{
+        margin-left: auto;
+      }
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+    }
+  }
+}
